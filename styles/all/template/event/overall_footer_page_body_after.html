@@ -1,0 +1,19 @@
+	<div class="leaders">
+		<div class="gm">
+			<h3>Guild Master</h3>
+
+			<ul class="list-inline">
+				<li<!-- IF GM_CLASS --> class="{GM_CLASS}"<!-- ENDIF -->><a href="/roster/character/{GM_NAME}">{GM_NAME}</a></li>
+			</ul>
+		</div>
+
+		<div class="officers">
+			<h3>Officers</h3>
+
+			<ul class="list-inline">
+				<!-- BEGIN officers -->
+				<li class="list-inline-item<!-- IF officers.CLASS --> {officers.CLASS}<!-- ENDIF -->"><a href="/roster/character/{officers.NAME}">{officers.NAME}</a></li>
+				<!-- END officers -->
+			</ul>
+		</div>
+	</div>

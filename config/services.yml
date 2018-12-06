@@ -1,0 +1,9 @@
+services:
+    numeric.leaders.listener:
+        class: numeric\leaders\event\main_listener
+        arguments:
+            - '@controller.helper'
+            - '@dbal.conn'
+            - '@template'
+        tags:
+            - { name: event.listener }
